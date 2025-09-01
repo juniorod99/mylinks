@@ -15,7 +15,7 @@
         </div>
         <br>
         <div>
-            <input name="password" placeholder="Password" value="{{ old('password') }}">
+            <input type="password" name="password" placeholder="Password" value="{{ old('password') }}">
             @error('password')
                 <span>{{ $message }}</span>
             @enderror
