@@ -16,6 +16,9 @@ class DashboardController extends Controller
             'dashboard',
             [
                 'user' => $user,
+                'links' => $user->links()
+                    ->orderBy('sort')
+                    ->get(),
             ]
         );
     }
